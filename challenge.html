@@ -105,6 +105,7 @@
                     <h2 class="major"><span>News</span></h2>
                     <ul>
                         <li><b>22/12/2025: </b>Website made live</li>
+                        <li><b>29/01/2026: </b>Task 1: ME-VQA is updated with an improved ME-VQA-v2</li>
                     </ul>
                 </section>
 
@@ -164,7 +165,14 @@
 
                     <h3>Task 1 - ME-VQA - Recommended Training Data</h3>
                     <ul>
-                        <li><strong>Curated ME VQA dataset:</strong> Improved from the MEGC2019 composite dataset with clips from SAMM, CASME II, and SMIC by adding QA pairs.</li>
+                        <li><strong>Curated ME VQA dataset:</strong> Improved from the MEGC2019 composite dataset with clips from SAMM, CASME II, and SMIC by adding QA pairs.
+                            <ul>
+                                <li> The ME-VQA dataset used for MEGC 2025 (last year) is here: <a href="https://megc2025.github.io/files/me_vqa_samm_casme2_smic.jsonl">ME-VQA (ME-VQA-v1)</a>.</li>
+                                <li> We have improved the comprehensive QA pairs by including some variations, and made the new <a href="https://megc2026.github.io/files/me_vqa_samm_casme2_smic_v2.jsonl">ME-VQA-v2</a>.</li>
+                                <li> In ME-VQA-v2, the comprehensive QA questions become more general, and the answers have a few variations. </li>
+                                <li> Reference (MEGC 2025 with ME-VQA): X, Fan, J. Li, J. See, M. H. Yap, W.-H. Cheng, X. Li, X. Hong, S.-J. Wang and A. K. Davison., "MEGC2025: Micro-expression grand challenge on spot then recognize and visual question answering" Proceedings of the ACM International Conference on Multimedia (ACM MM)., 2025.</li>
+                            </ul>
+                        </li>
 
                         <li><strong>SAMM</strong> (159 ME clips at 100 fps):
                             <ul>
@@ -334,6 +342,7 @@
                     <p>
                         $$ \mathrm{ROUGE\text{-}1} = \frac{\sum_{w \in V} \min\big(\mathrm{N}_p(w),\ \mathrm{N}_r(w)\big)}{\sum_{w \in V} \mathrm{N}_r(w)} $$
                     </p>
+                    * There will be some slight improvements to the evaluation metrics to better suit the CV and NLP perspectives. Please stay tuned for updates. 
 
                 </section>
 
@@ -364,14 +373,34 @@
                     <h3>Competition Submission</h3>
                     <p>The MEGC 2026 competition will use a dedicated Codabench-based competition website. </p>
                     <ul>
-                       <li><b>Challenge submission platform for ME-VQA task: TBC</b></li>
-                    <li><b>Challenge submission platform for ME-LVQA task: TBC</b></li>
+                        <li><b>Challenge submission platform for ME-VQA task: TBC</b></li>
+                        <li><b>Challenge submission platform for ME-LVQA task: TBC</b></li>
                         <li><strong>Evaluation result file (.json)</strong> : This file must include, for every tested video, the
-dataset name, video ID, and the corresponding predicted outputs. The Codabench
-platform will parse and evaluate these results, displaying metric-specific scores and
-leaderboard rankings in real time. A daily submission limit will be imposed to prevent
-leaderboard overfitting.</li>
+                            dataset name, video ID, and the corresponding predicted outputs. The Codabench
+                            platform will parse and evaluate these results, displaying metric-specific scores and
+                            leaderboard rankings in real time. A daily submission limit will be imposed to prevent
+                            leaderboard overfitting.
+                        </li>
                     </ul>
+
+                    <h3>Task 1: ME-VQA Submission details</h3>
+                    <ul>
+                        <li>Participants can fill in the test VQA to-answer josonl files and renamed them as xxx_pred.jsonl. These files are available at <a href=https://drive.google.com/drive/folders/1r6B7SWppop25TgwD-iXS-WFe5sEyt3TV?usp=sharing>Google Drive</a> and <a href=https://pan.baidu.com/s/1Aer_tt76c4PnupBw3r0D8w?pwd=7hrb>Baidu Drive</a>.
+                            <ul>
+                                <li>me_vqa_casme3_v2_test_to_answer.jsonl</li>
+                                <li>me_vqa_samm_v2_test_to_answer.jsonl</li>
+                            </ul>
+                        </li>
+                        <li> Submissions to the Leaderboard must be made in the form of a zip file containining the predicted jsonl files with the following filenames:
+                        <ul>
+                                <li>me_vqa_casme3_v2_test_pred.jsonl (for the unseen CAS(ME)3 ME clips)</li>
+                                <li>me_vqa_samm_v2_test_pred.jsonl (for the unseen SAMM ME clips)</li>
+                            </ul>
+
+                        </li>
+                    </ul>
+
+
 
                     <h3>Rules</h3>
                     <ul>
