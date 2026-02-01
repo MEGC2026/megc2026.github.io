@@ -354,7 +354,7 @@
                 </p>
                 <ul>
                     <li>
-                        <b>For ME-VQA:</b> We will release the baseline models used in MEGC 2025. These baselines demonstrate how short video clips can be paired with natural-language questions and offer strong reference points for zero-shot and fine-tuned performance.
+                        <b>For ME-VQA:</b> We will release a baseline that demonstrates how short video clips can be paired with natural-language questions and offer strong reference points for zero-shot and fine-tuned performance.
                     </li>
                     <li>
                         <b>For ME-LVQA:</b> We will introduce a new baseline pipeline for long video question answering. This pipeline provides participants with an end-to-end reference workflow, illustrating how natural-language reasoning can be integrated.
@@ -393,13 +393,29 @@
                         </li>
                         <li> Submissions to the Leaderboard must be made in the form of a zip file containining the predicted jsonl files with the following filenames:
                         <ul>
-                                <li>me_vqa_casme3_v2_test_pred.jsonl (for the unseen CAS(ME)3 ME clips)</li>
+                                <li>me_vqa_casme3_v2_test_pred.jsonl (for the unseen CAS(ME)<sup>3</sup> ME clips)</li>
                                 <li>me_vqa_samm_v2_test_pred.jsonl (for the unseen SAMM ME clips)</li>
                             </ul>
 
                         </li>
                     </ul>
 
+                    <h3>Task 2: ME-LVQA Submission details</h3>
+                    <ul>
+                        <li>Participants can fill in the test LVQA to-answer josonl files and renamed them as xxx_pred.jsonl. These files are available at <a href=https://drive.google.com/drive/folders/1V7rMoOeQ94vXkPOhWb9d-bS0TyQdDHIm?usp=sharing>Google Drive</a> and <a href=https://pan.baidu.com/s/1DaCD6GCSlusHBi3fArGWCQ?pwd=9c6a>Baidu Drive</a>.
+                            <ul>
+                                <li>me_lvqa_casme3_test_to_answer.jsonl</li>
+                                <li>me_lvqa_samm_test_to_answer.jsonl</li>
+                            </ul>
+                        </li>
+                        <li> Submissions to the Leaderboard must be made in the form of a zip file containining the predicted jsonl files with the following filenames:
+                        <ul>
+                                <li>me_lvqa_casme3_test_pred.jsonl (for the unseen CAS(ME)<sup>3</sup> ME videos)</li>
+                                <li>me_lvqa_samm_test_pred.jsonl (for the unseen SAMM ME videos)</li>
+                            </ul>
+
+                        </li>
+                    </ul>
 
 
                     <h3>Rules</h3>
