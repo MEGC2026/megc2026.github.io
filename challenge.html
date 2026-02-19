@@ -246,6 +246,12 @@
  <p>  </p>
                     <h3>Task 2 - ME-LVQA - Recommended Training Data</h3>
                     <ul>
+                        <li><strong>Curated ME LVQA dataset:</strong> Improved from the SAMM-LV and CAS(ME)<sup>3</sup> (part A) by adding QA pairs.
+                            <ul>
+                                <li> The ME-LVQA dataset can be found here: <a href="https://megc2026.github.io/files/me_lvqa_samm_casme3.jsonl">ME-LVQA</a>.</li>
+                                <li> We apologize that the ME-LVQA dataset may be updated in the future, but we will keep you informed of any changes.</li>
+                            </ul>
+                        </li>
                         <li><strong>SAMM Long Videos</strong> (147 long videos at 200 fps):
                             <uL>
                             <li> To download the dataset, please visit: <a
@@ -343,28 +349,9 @@
                     <p>
                         $$ \mathrm{ROUGE\text{-}1} = \frac{\sum_{w \in V} \min\big(\mathrm{N}_p(w),\ \mathrm{N}_r(w)\big)}{\sum_{w \in V} \mathrm{N}_r(w)} $$
                     </p>
-                    * There will be some slight improvements to the evaluation metrics to better suit the CV and NLP perspectives. Please stay tuned for updates. 
+                    
 
                 </section>
-
-                <section>
-                <a name="baselines"></a>
-                <h2 class="major"><span>Baselines</span></h2>
-                <p>
-                    We will release a baseline paper describing the core methodology and evaluation strategy, and example submissions to clarify output formats. To support participants and ensure fair comparison, we will provide a comprehensive suite of baseline methods, reference implementations, and evaluation tools for both ME-VQA and ME-LVQA.
-                </p>
-                <ul>
-                    <li>
-                        <b>For ME-VQA:</b> We will release a baseline that demonstrates how short video clips can be paired with natural-language questions and offer strong reference points for zero-shot and fine-tuned performance.
-                    </li>
-                    <li>
-                        <b>For ME-LVQA:</b> We will introduce a new baseline pipeline for long video question answering. This pipeline provides participants with an end-to-end reference workflow, illustrating how natural-language reasoning can be integrated.
-                    </li>
-                </ul>
-                <p>
-                    Finally, the competition will be hosted on the <b>Codabench</b> platform, which provides a transparent and secure leaderboard, reproducible evaluations, and strict submission management. Codabench ensures fairness by preventing label leakage, enforcing submission limits, and enabling consistent scoring across all participants.
-                </p>
-            </section>
 
                 <!-- Submission Section -->
                  <section>
