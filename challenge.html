@@ -96,6 +96,17 @@
                         <li><strong>Task 1 - ME-VQA:</strong> a continuation of the ME-VQA task (MEGC 2025) for benchmarking short-clip subtle-emotion reasoning.</li>
                         <li><strong>Task 2 - ME-LVQA:</strong> a new ME-LVQA task <em>Micro-Expression Long-Video Question Answering</em>, requiring reasoning and description across long videos.</li>
                     </ul>
+
+                    <p>
+                        Competition (Codabench) platforms are available here:
+                    </p>
+                    <ul>
+                        <li><strong>Task 1 - ME-VQA:</strong> <a
+                                    href="https://www.codabench.org/competitions/13819/">Codabench ME-VQA</a></li>
+                        <li><strong>Task 2 - ME-LVQA:</strong> <a
+                                    href="https://www.codabench.org/competitions/14279/">Codabench ME-LVQA</a></li>
+                    </ul>
+
                     <p>
                     Please contact Xinqi (x.fan@mmu.ac.uk) with an email subject starting with MEGC2026 if you have any questions about the competition.
                     </p>
@@ -112,6 +123,8 @@
                         <li><b>09/02/2026: </b>Task 1: ME-VQA testing platform is available at <a
                                     href="https://www.codabench.org/competitions/13819/">Codabench ME-VQA</a></li>
                         <li><b>19/02/2026: </b>Task 2: curated ME-LVQA dataset released</li>
+                        <li><b>09/02/2026: </b>Task 2: ME-LVQA testing platform is available at <a
+                                    href="https://www.codabench.org/competitions/14279/">Codabench ME-LVQA</a></li>
                     </ul>
                 </section>
 
@@ -122,21 +135,13 @@
                 <p>The competition schedule is aligned with the FG 2026 timeline:</p>
                 <ul>
                     <li><b>Competition Period: </b>
-                        23rd December 2025 – 9th March 2026</li>
-                    <li><b>Training Set Release: </b>
-                        23rd December 2025 </li>
-                    <li><b>Test Set Release: </b>
-                        1st February 2026 </li>
-                    <li><b>Competition End Date: </b>
-                        TBD</li>
+                        23rd December 2025 – 3oth March 2026</li>
                     <li><b>Winner Paper Submissions and Code Verification: </b>
-                        23rd March 2026</li>
+                        6th April 2026</li>
                     <li><b>Notification of Acceptance: </b>
-                        2nd April 2026 (FG 2026 Round 2 Notification)</li>
+                        13th April 2026 (FG 2026 Round 2 Notification)</li>
                     <li><b>Camera-Ready Deadline: </b>
                         21st April 2026 (FG 2026 Camera-Ready)</li>
-                    <li><b>Challenge Date: </b>
-                        25th or 29th May 2026 (during FG 2026)</li>
                 </ul>
             </section>
  <section>
@@ -314,8 +319,6 @@
                                 Reference: Li, X., Cheng, S., Li, Y., Behzad, M., Shen, J., Zafeiriou, S., ... & Zhao, G. (2022). 4DME: A spontaneous 4D micro-expression dataset with multimodalities. IEEE Transactions on Affective Computing.
                             </li>
                         </ul></li>
-
-                        <li><strong>ME-LVQA:</strong> Will be prepared and released when we release the competition baseline.</li>
                     </ul>
  <p>  </p>
                     <h3>Unseen Test Data</h3>
@@ -331,7 +334,7 @@
  <section>
                     <a name="evaluation"></a>
                     <h2 class="major"><span>Evaluation Metrics</span></h2>
-                    <p>To evaluate the performance of both our ME-VQA and ME-LVQA, we report metrics for both emotion classification and the overall language answer quality. The final ranking of the challenge participants will be based on the average (Avg) of all the overall metrics.</p>
+                    <p>To evaluate the performance of both our ME-VQA, we report metrics for both emotion classification and the overall language answer quality. The final ranking of the challenge participants will be based on the average (Avg) of all the overall metrics.</p>
 
                     <h3>Emotion Classification</h3>
                     <p>For both coarse- and fine-grained emotion classification, we use <strong>Unweighted F1 Score (UF1)</strong> and <strong>Unweighted Average Recall (UAR)</strong> to ensure balanced evaluation across classes.</p>
@@ -352,6 +355,8 @@
                     <p>
                         $$ \mathrm{ROUGE\text{-}1} = \frac{\sum_{w \in V} \min\big(\mathrm{N}_p(w),\ \mathrm{N}_r(w)\big)}{\sum_{w \in V} \mathrm{N}_r(w)} $$
                     </p>
+
+                    <p><strong>ME-LVQA</strong> will be evaluated using RMSE and MAE for regression tasks, AU-set F1 and AU Set Jaccard index for AU tasks, and UF1, UAR for expression classification tasks.</p>
                     
 
                 </section>
@@ -364,8 +369,10 @@
                     <h3>Competition Submission</h3>
                     <p>The MEGC 2026 competition will use a dedicated Codabench-based competition website. </p>
                     <ul>
-                        <li><b>Challenge submission platform for ME-VQA task: TBC</b></li>
-                        <li><b>Challenge submission platform for ME-LVQA task: TBC</b></li>
+                        <li><b>Challenge submission platform for ME-VQA task: <a
+                                    href="https://www.codabench.org/competitions/13819/">Codabench ME-VQA</a></b></li>
+                        <li><b>Challenge submission platform for ME-LVQA task: <a
+                                    href="https://www.codabench.org/competitions/14279/">Codabench ME-LVQA</a></b></li>
                         <li><strong>Evaluation result file (.json)</strong> : This file must include, for every tested video, the
                             dataset name, video ID, and the corresponding predicted outputs. The Codabench
                             platform will parse and evaluate these results, displaying metric-specific scores and
